@@ -21,22 +21,18 @@ def check(player, computer):
             return "Rock smashes Scissors! You WIN!"
         elif computer == "paper":
             return "Paper covers Rock! You LOSE!"
-        else:
-            return "Invalid, Try typing rock"
+        
     elif player == "paper" :
         if computer == "rock":
             return "Paper covers Rock! You WIN!"
         elif computer == "scissors":
             return "Scissors cuts Paper! You LOSE!"
-        else:
-            return "Invalid, Try typing paper"
+
     elif player == "scissors":
         if computer == "paper":
             return "Scissors cuts Paper! You WIN!"
         elif computer == "rock":
             return "Rock smashes Scissors! You LOSE!"
-        else:
-            return "Invalid, Try typing scissors"
             
 choices = choice()
 result = check(choices["player"], choices["computer"])
